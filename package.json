@@ -1,0 +1,25 @@
+{
+  "name": "dsh-chatgpt-style",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH Web 的 ChatGPT 化对话排版：768px 居中版心、右侧中性灰气泡、正文 16/28、圆角代码块",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

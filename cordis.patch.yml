@@ -1,0 +1,5 @@
+# dsh-chatgpt-style 的组合包补丁：把本插件插进当前 profile 的加载树。
+# profile 里装一次，这条就生效一次；从 profile 卸载时这一层也跟着走。
+- insert:
+    - id: dsh-chatgpt-style
+      name: 'dsh-chatgpt-style'
